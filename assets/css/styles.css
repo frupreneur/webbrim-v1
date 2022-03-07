@@ -131,7 +131,7 @@ Hero section
     margin-top: 50px; /* compensate for fixed header*/
     
     width: 100%;
-    background-image: url('/assets/img/photo-1621856625680-282ec3a17db8.jpeg');
+    background-image: url('https://raw.githubusercontent.com/frupreneur/webbrim-v1/main/assets/img/photo-1621856625680-282ec3a17db8.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -393,12 +393,11 @@ Services section
 Quote section
 */
 
-
 .quote {
     width: 100%;
     height: 350px;
     
-    background-image: url('/assets/img/photo-1542744173-8e7e53415bb0.jpeg');
+    background-image: url('https://github.com/frupreneur/webbrim-v1/blob/main/assets/img/photo-1542744173-8e7e53415bb0.jpeg?raw=true');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -561,7 +560,7 @@ Footer section
 
 .footer {
     width: 100%;
-    background-image: url('/assets/img/photo-1519389950473-47ba0277781c.jpeg');
+    background-image: url('https://github.com/frupreneur/webbrim-v1/blob/main/assets/img/photo-1519389950473-47ba0277781c.jpeg?raw=true');
     background-size: cover;
 
     padding: 100px 0px;
