@@ -1,0 +1,651 @@
+/* 
+GLOBALS 
+*/
+
+*, *::before , *::after {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* 
+HTML and body declaration 
+*/
+html,body{
+    font-size: 16px;
+    overflow-x: hidden;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+
+
+
+
+/* 
+header 
+*/
+
+
+
+
+header {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    
+    background-color: #0D3B66;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+}
+
+
+header > .header-wrapper {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    padding: 10px 0px;
+    
+   
+}
+
+.nav-wrapper {
+    text-align: center !important;
+    flex: 1 1 100%;
+    display: flex;
+   
+}
+
+.header-wrapper img {
+    
+    align-self: center;
+    
+    object-fit: fill;
+    justify-self: end;
+
+    padding-left: 65px;
+
+}
+
+
+.header-wrapper li{
+    list-style: none;
+    color: white;
+    padding:0 1rem;
+}
+
+.header-wrapper li a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-wrapper  ul {
+
+    width: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+
+}
+
+.ul-container{
+    width: 100%;
+    
+}
+
+
+
+
+
+.nav-item > .nav-link{
+   border-bottom: 2px solid #5df1ef ;
+
+}
+
+.nav-item > .nav-link:hover{
+    border-bottom: 2px solid #ff0000 ;
+ 
+ }
+
+
+
+
+
+/* 
+Hero section
+*/
+
+
+
+.hero {
+    margin-top: 50px; /* compensate for fixed header*/
+    
+    width: 100%;
+    background-image: url('/assets/img/photo-1621856625680-282ec3a17db8.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+   
+     /* make hero section flex for alignment*/
+     display:flex;
+     justify-content:center;
+     align-items: center;
+     position: relative;
+    
+}
+.hero::after {
+    content: '';
+    position:absolute;
+    background-color: black;
+    opacity: 0.5;
+    width:100%; 
+    height:100%;
+    top:0px; left: 0px;
+    z-index: 1;
+    
+}
+.hero > * {
+    z-index: 10;
+}
+
+
+
+.hero-wrapper {
+    margin-top: 20vw;
+    margin-bottom: 5vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1500px;
+
+}
+
+.hero-title {
+   font-family: 'Shadows Into Light Two', cursive; 
+   font-size: 8vw;
+   color: white;
+   text-align:center;
+   padding: 0px .75rem;
+   opacity: .9;
+} 
+
+.hero-buttons{
+    align-self: center;
+    justify-self: end;
+}
+
+.hero-buttons a:first-child {
+    border:3px solid #5df1ef;
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.hero-buttons a:nth-child(2){
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    background-color:#0D3B66;
+    border:1px solid #5df1ef;
+
+}
+
+
+
+/* 
+Mission section
+*/
+
+
+.mission{
+    width: 100%;
+  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+
+
+.mission-wrapper {
+   margin: 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 20px 0px;
+    max-width: 1500px;
+}
+
+
+.mission-content p {
+
+}
+
+
+.mission-content {
+  
+    flex: 1 1 0;
+   
+}
+
+.mission-img{
+    flex: 1 1 0;
+ 
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+
+.mission-img img {
+   
+
+    width: 40vw;
+    max-width: 500px;
+    min-width: 300px;
+    height: 40vw;
+    max-height: 500px;
+    min-height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+
+
+  
+/*
+     width: 100%;
+    display: block;
+   
+    height: auto;
+    border-radius: 50%;
+  
+    border-radius: 50%;
+    */
+    
+ }
+
+ .mission-content > h2 {
+     position: relative;
+     font-size: 3vw;
+     color: #0D3B66
+ }
+
+ .mission-content > h2:before {
+    content: " ";
+    width: 10vw;
+    height: 0.25rem;
+    background-color: #5df1ef;
+    position: absolute;
+    top: 100%;
+
+ }
+
+
+
+ .mission-content > a {
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    background-color:#0D3B66;
+   
+
+ }
+
+ 
+
+
+ /* 
+Services section
+*/
+
+.services {
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: #0d3b66;
+    display: flex;
+    justify-content: center
+
+}
+
+
+.services-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1500px;
+    
+}
+
+.services-wrapper .services-title {
+    color: white;
+    position: relative;
+    font-size: 4vw;
+    margin-top: 0px;
+
+}
+
+.services-wrapper .services-title::before{
+    content: " ";
+    width: 10vw;
+    height: 0.25rem;
+    background-color: #5df1ef;
+    position: absolute;
+    top: 100%;
+    left:33%;
+
+}
+
+
+.services-items{
+    display: flex;
+    gap: 5px;
+    justify-content:space-around; 
+    align-content:space-around;
+    flex-flow: row wrap;
+
+
+}
+.services-items > .service {
+    padding: 5px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+
+    
+   flex: 1 1 250px;
+
+    
+
+}
+
+.services-items > .service > img {
+    width: 118px ;
+    height: auto
+}
+
+
+
+
+/* 
+Quote section
+*/
+
+
+.quote {
+    width: 100%;
+    height: 350px;
+    
+    background-image: url('/assets/img/photo-1542744173-8e7e53415bb0.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    position: relative;
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+  
+}
+
+.quote > .overlay{
+    content: ' ';
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height:100%;
+    top:0px; 
+    left:0px;
+
+    z-index: 1;
+}
+
+
+.quote > * {
+    z-index: 100;
+    position: relative;
+}
+
+
+
+.quote-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+
+.quote-wrapper p{
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+
+
+/* 
+Team section
+*/
+
+
+
+
+.team {
+    width: 100%;
+    display:flex;
+    justify-content:center;
+}
+
+.team h2 {
+    font-size: 4vw;
+    color: #0d3b66;
+    position: relative;
+    margin-top: 0px;
+
+}
+.team h2::after {
+    content: '';
+    position: absolute;
+    width: 10vw;
+    height: 0.25rem;
+    top:100%;
+    left: 33%;
+
+
+    background-color: #5df1ef;
+
+    
+}
+
+.team img {
+    max-width: 100%;
+    margin: 20px 0px 10px 0px;;
+    border: 3px solid #0D3B66;
+    height: 373px;
+    object-fit: cover;
+}
+
+
+.team-wrapper {
+    padding: 50px 25px;;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    max-width: 1445px;
+}
+
+.team-container {
+    display: flex;
+    gap: 3.25rem;
+    text-align: left !important;
+    
+}
+
+
+.team-member {
+    padding: 10px;
+    flex-basis: 100%;
+
+    background-color: #5df1ef;
+    border-radius: 32px;
+    
+
+    display:flex;
+    flex-direction: column;
+    
+    
+
+}
+
+.team-member h3 {
+   position: relative;
+   font-size: 1.5em;
+   color: #0D3B66;
+   margin: 0px;
+   padding: 0px;
+
+    
+}
+
+.team-member h3::before {
+    content: '';
+    background-color:#ffffff;
+    position: absolute;
+
+    width: 5rem;
+    height: 0.25rem;
+
+    top:100%;
+    left: 0px;
+
+    z-index: 10;
+
+}
+
+
+
+
+/* 
+Footer section
+*/
+
+
+
+.footer {
+    width: 100%;
+    background-image: url('/assets/img/photo-1519389950473-47ba0277781c.jpeg');
+    background-size: cover;
+
+    padding: 100px 0px;
+    text-align: center;
+    position: relative;
+    
+}
+.footer::after {
+    content: '';
+    background-color: black;
+    opacity: 0.76;
+    width: 100%; height: 100%;
+
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 10;
+
+}
+.footer > * {
+    z-index: 100;
+    position: relative
+}
+
+.footer h2 {
+    font-size: 51px;
+    font-family: 'Shadows Into Light Two', cursive ;
+    color:#5df1ef; opacity: 0.8;
+}
+
+.footer p {
+    color: white; font-size: 36px;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (max-width: 1114px){
+    .mission-wrapper , .team-container {
+        
+         flex-direction: column;
+        
+         justify-content: center;
+         text-align: center;
+         
+     }
+
+     .mission-content{
+         margin-bottom: 25px;
+     }
+
+    header > .header-wrapper {
+        padding: 10px 0px;
+        flex-direction: column;
+    }
+
+    .hero {
+        background-position: -350px -100px;
+
+    }
+
+    .header-wrapper img {
+       
+        padding: 0px;
+    
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .nav-wrapper  ul {
+       font-size: 10px;
+    }
+
+    .hero {
+        background-position: -500px -300px;
+
+    }
+    .hero-buttons a {
+        font-size: 10px;
+    }
+    
+
+}
